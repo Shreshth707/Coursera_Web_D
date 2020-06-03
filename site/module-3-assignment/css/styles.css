@@ -1,0 +1,134 @@
+body {
+  font-size: 16px;
+  color: #fff;
+  background-color: green;
+  font-family: 'Oxygen', sans-serif;
+}
+
+div#container {
+  background-color: grey;
+  border: 2px solid black;
+  height: 500px; 
+  margin: 5px
+}
+section{
+  font-size: 35px;
+}
+
+#content{
+  padding: 10px;
+  font-size: 18px;
+}
+/** HEADER **/
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+.navbar-brand {
+  padding-top: 25px;
+}
+.navbar-brand h1 { /* Restaurant name */
+  font-family: 'Lora', serif;
+  color: blue;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+
+
+#nav-list a{
+  border: 1px solid #61122f;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: grey;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  position: absolute;
+  right: 0px;
+
+}
+/* END HEADER */
+
+
+
+
+/* END HOME PAGE */
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  .navbar-brand {
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 40px;
+  }
+}
+
+
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+  
+  .navbar-brand {
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 40px;
+  }
+  /* End Home Page */
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 30px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  #call-btn > a {
+    font-size: 1.5em;
+    display: block;
+    margin: 0 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+    background-color: #f6b319;
+    color: #951c49;
+  }
+  /* End Header */
+}
+
+
